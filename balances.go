@@ -18,7 +18,7 @@ func main() {
 	fmt.Printf("Shared Overdraft balance: ")
 	fmt.Scanln(&sharedOverdraft)
 	fmt.Println()
-	fmt.Println("Bank Balances as of", time.Now())
+	fmt.Println("Bank Balances as of", time.Now().Format("2006-01-02 15:04:05"))
 	fmt.Println("\nUCCU Shared Account:")
 	fmt.Printf("$%.0f Shared Savings (1211627-0)\n", sharedSavings)
 	fmt.Printf("$%.0f Shared Checking (1211627-9)\n", sharedChecking)
