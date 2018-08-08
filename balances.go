@@ -14,6 +14,9 @@ func main() {
 	var sharedChecking float64
 	fmt.Printf("Shared Checking available balance: ")
 	fmt.Scanln(&sharedChecking)
+	var taxAccount float64
+	fmt.Printf("Tax account available balance: ")
+	fmt.Scanln(&taxAccount)
 	var sharedOverdraft float64
 	fmt.Printf("Shared Overdraft balance: ")
 	fmt.Scanln(&sharedOverdraft)
@@ -22,6 +25,7 @@ func main() {
 	fmt.Println("\nUCCU Shared Account:")
 	fmt.Printf("$%.0f Shared Savings (1211627-0)\n", sharedSavings)
 	fmt.Printf("$%.0f Shared Checking (1211627-9)\n", sharedChecking)
+	fmt.Printf("$%.0f Tax Account (1899850)\n", taxAccount)
 	if sharedOverdraft > 0 {
 		fmt.Printf("$%.0f Shared Overdraft (1211627-99)", sharedOverdraft)
 	}
